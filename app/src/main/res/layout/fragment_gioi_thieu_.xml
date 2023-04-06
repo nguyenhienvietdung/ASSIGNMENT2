@@ -1,249 +1,275 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.assignment.fragment.GioiThieu_Fragment">
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
+            android:layout_height="wrap_content">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
                 android:background="@drawable/bg_ui"
                 android:gravity="center"
-                android:layout_marginTop="-5dp"
                 android:orientation="vertical">
 
                 <ImageView
+                    android:layout_width="@dimen/d_35"
+                    android:layout_height="@dimen/d_35"
+                    android:layout_marginLeft="@dimen/d_180"
                     android:layout_marginTop="10dp"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
-                    android:tint="@color/white"
+                    android:layout_marginRight="@dimen/d_15"
                     android:src="@drawable/ic_settings_black_24dp"
-                    android:layout_marginLeft="180dp"
-                    android:layout_marginRight="15dp"/>
+                    android:tint="@color/white" />
 
                 <ImageView
-                    android:layout_marginTop="20dp"
-                    android:layout_width="130dp"
-                    android:layout_height="130dp"
-                    android:src="@drawable/person_icon"/>
+                    android:layout_width="@dimen/d_130"
+                    android:layout_height="@dimen/d_130"
+                    android:layout_marginTop="@dimen/d_20"
+                    android:src="@drawable/person_icon" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/d_100"
+                    android:paddingTop="@dimen/d_5"
                     android:text="Nguyễn Việt Dũng"
                     android:textColor="@color/profileAccentColor"
-                    android:textSize="20dp"
-                    android:paddingTop="5dp"
-                    android:layout_marginBottom="100dp"/>
+                    android:textSize="20sp" />
                 />
 
 
             </LinearLayout>
+
             <GridLayout
-                android:layout_width="345dp"
-                android:layout_height="100dp"
-                android:layout_marginTop="285dp"
-                android:layout_marginLeft="33dp"
-                android:layout_marginRight="33dp"
+                android:layout_width="@dimen/d_345"
+                android:layout_height="@dimen/d_100"
+                android:layout_marginLeft="@dimen/d_33"
+                android:layout_marginTop="@dimen/d_285"
+                android:layout_marginRight="@dimen/d_33"
                 android:columnOrderPreserved="false">
+
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     app:cardBackgroundColor="@color/white"
-                    app:cardElevation="10dp"
-                    app:cardCornerRadius="7dp">
+                    app:cardCornerRadius="@dimen/d_7"
+                    app:cardElevation="@dimen/d_10">
+
                     <LinearLayout
-                        android:layout_width="115dp"
+                        android:layout_width="@dimen/d_115"
                         android:layout_height="match_parent"
                         android:gravity="center"
                         android:orientation="vertical">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Follower"
-                            android:textSize="15dp"
-                            android:textColor="@color/black"/>
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/d_15" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/d_8"
                             android:text="1235"
-                            android:textSize="20dp"
                             android:textColor="@color/grey_dam"
-                            android:layout_marginTop="8dp"/>
+                            android:textSize="20sp" />
                     </LinearLayout>
+
                     <LinearLayout
-                        android:layout_width="115dp"
+                        android:layout_width="@dimen/d_115"
                         android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/d_115"
                         android:gravity="center"
-                        android:layout_marginLeft="115dp"
                         android:orientation="vertical">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Following"
-                            android:textSize="15dp"
-                            android:textColor="@color/black"/>
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/d_8"
                             android:text="155"
-                            android:textSize="20dp"
                             android:textColor="@color/grey_dam"
-                            android:layout_marginTop="8dp"/>
+                            android:textSize="@dimen/d_20" />
                     </LinearLayout>
+
                     <LinearLayout
-                        android:layout_width="115dp"
+                        android:layout_width="@dimen/d_115"
                         android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/d_220"
                         android:gravity="center"
-                        android:layout_marginLeft="220dp"
                         android:orientation="vertical">
+
                         <Button
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Follow me"
-                            android:textSize="14dp"
                             android:background="@drawable/bg_ui"
-                            android:textColor="@color/white"/>
+                            android:text="Follow me"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/d_14" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
             </GridLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginTop="386dp"
+                android:layout_height="@dimen/d_40"
+                android:layout_marginTop="@dimen/d_386"
                 android:background="@drawable/bg_ui"
                 android:orientation="horizontal">
+
                 <TextView
-                    android:layout_width="134dp"
+                    android:layout_width="@dimen/d_134"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d_5"
+                    android:paddingLeft="@dimen/d_45"
                     android:text="Post"
-                    android:textSize="20dp"
-                    android:layout_marginTop="5dp"
-                    android:paddingLeft="45dp"
-                    android:textColor="@color/white"/>
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
                 <TextView
-                    android:layout_width="134dp"
+                    android:layout_width="@dimen/d_134"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d_5"
+                    android:paddingLeft="@dimen/d_45"
                     android:text="Contact"
-                    android:textSize="20dp"
-                    android:layout_marginTop="5dp"
-                    android:paddingLeft="45dp"
-                    android:textColor="@color/white"/>
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
                 <TextView
-                    android:layout_width="134dp"
+                    android:layout_width="@dimen/d_134"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d_5"
+                    android:paddingLeft="@dimen/d_45"
                     android:text="About"
-                    android:textSize="20dp"
-                    android:layout_marginTop="5dp"
-                    android:paddingLeft="45dp"
-                    android:textColor="@color/white"/>
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
             </LinearLayout>
+
             <LinearLayout
-                android:layout_marginLeft="30dp"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginTop="460dp"
-                android:orientation="horizontal">
-                <ImageView
-                    android:tint="@color/grey_dam"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/email"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/grey_dam"
-                    android:text="nguyenhienvietdung23@gmail.com"
-                    android:textSize="15dp"
-                    android:paddingLeft="15dp"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_marginLeft="30dp"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginTop="500dp"
-                android:orientation="horizontal">
-                <ImageView
-                    android:tint="@color/grey_dam"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_phone_black_24dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/grey_dam"
-                    android:text="0392808126"
-                    android:textSize="15dp"
-                    android:paddingLeft="15dp"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_marginLeft="30dp"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginTop="540dp"
+                android:layout_height="@dimen/d_40"
+                android:layout_marginLeft="@dimen/d_30"
+                android:layout_marginTop="@dimen/d_460"
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:tint="@color/grey_dam"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_person_add_black_24dp" />
+                    android:src="@drawable/email"
+                    android:tint="@color/grey_dam" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/d_15"
+                    android:text="nguyenhienvietdung23@gmail.com"
                     android:textColor="@color/grey_dam"
-                    android:text="Add to group              "
-                    android:textSize="15dp"
-                    android:paddingLeft="15dp"/>
+                    android:textSize="15sp" />
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_40"
+                android:layout_marginLeft="@dimen/d_30"
+                android:layout_marginTop="@dimen/d_500"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_phone_black_24dp"
+                    android:tint="@color/grey_dam" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:text="0392808126"
+                    android:textColor="@color/grey_dam"
+                    android:textSize="@dimen/d_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_40"
+                android:layout_marginLeft="@dimen/d_30"
+                android:layout_marginTop="@dimen/d_540"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_person_add_black_24dp"
+                    android:tint="@color/grey_dam" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/d_15"
+                    android:text="Add to group              "
+                    android:textColor="@color/grey_dam"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/line1"
-                android:layout_marginLeft="30dp"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginTop="580dp"
+                android:layout_height="@dimen/d_40"
+                android:layout_marginLeft="@dimen/d_30"
+                android:layout_marginTop="@dimen/d_580"
                 android:orientation="horizontal">
+
                 <ImageView
-                    android:tint="@color/grey_dam"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_message_black_24dp"/>
+                    android:src="@drawable/ic_message_black_24dp"
+                    android:tint="@color/grey_dam" />
+
                 <TextView
 
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/grey_dam"
+                    android:paddingLeft="@dimen/d_15"
                     android:text="Message                    "
-                    android:textSize="15dp"
-                    android:paddingLeft="15dp"/>
+                    android:textColor="@color/grey_dam"
+                    android:textSize="15sp" />
             </LinearLayout>
+
             <TextView
-                android:layout_below="@id/line1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:textAlignment="textStart"
-                android:layout_marginBottom="20dp"
+                android:layout_below="@id/line1"
+                android:layout_marginLeft="@dimen/d_10"
+                android:layout_marginTop="@dimen/d_25"
+                android:layout_marginRight="@dimen/d_10"
+                android:layout_marginBottom="@dimen/d_20"
+                android:gravity="start"
                 android:text="Đây là phần mềm quản lí thu chi trên nền tẳng android. Giúp bạn có thể quản lí được các chi tiêu trong cuộc sống hằng ngày của bạn"
+                android:textAlignment="textStart"
                 android:textColor="@color/grey_dam"
-                android:textSize="18dp"
-                android:gravity="start" />
-
+                android:textSize="18sp" />
         </RelativeLayout>
 
     </ScrollView>
-
-
-
 
 
 </LinearLayout>

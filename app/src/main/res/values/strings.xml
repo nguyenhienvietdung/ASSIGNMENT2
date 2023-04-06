@@ -12,4 +12,34 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="txt_dang_nhap">ĐĂNG NHẬP</string>
+    <string name="txt_action">Action</string>
+    <string name="txt_xem_chi_tiet">Xem chi tiết</string>
+    <string name="txt_sua_quan_ly_thu_chi">Sửa quản lí thu chi</string>
+    <string name="txt_xoa">Xóa</string>
+    <string name="txt_huy">Hủy</string>
+    <string name="txt_are_you_sure_want_to_save">Are You Sure Want to Save ??</string>
+    <string name="txt_yes">Yes</string>
+    <string name="txt_no">No</string>
+    <string name="txt_thong_ke">THỐNG KÊ</string>
+    <string name="txt_chon_ngay_bat_dau">Chọn ngày bắt đầu</string>
+    <string name="txt_chon_ngay_ket_thuc">Chọn ngày kết thúc</string>
+    <string name="txt_ket_qua">Kết quả</string>
+    <string name="txt_tong_thu">Tổng thu</string>
+    <string name="txt_so_tien">Số tiền</string>
+    <string name="txt_tong_chi">Tổng chi</string>
+    <string name="txt_con_lai">Còn lại</string>
+    <string name="txt_them_khoan_thu">THÊM KHOẢN THU</string>
+    <string name="txt_mo_ta_giao_dich">Mô tả giao dịch</string>
+    <string name="hint_ngay_giao_dich">Ngày giao dịch</string>
+    <string name="hitn_so_tien">Số tiền</string>
+    <string name="txt_them">Thêm</string>
+    <string name="txt_them_loai_thu">THÊM LOẠI THU</string>
+    <string name="hint_nhap_loai_chi">Nhập loại chi</string>
+    <string name="txt_thong_tin_thu">THÔNG TIN THU</string>
+    <string name="txt_khoan_thu">Khoản thu</string>
+    <string name="txt_khoan_chi">Khoản chi</string>
+    <string name="txt_ho_tro">Hỗ trợ</string>
+    <string name="txt_gioi_thieu">Giới thiệu</string>
+    <string name="txt_doi_mat_khau">Đổi mật khẩu</string>
+    <string name="txt_logout">Logout</string>
 </resources>

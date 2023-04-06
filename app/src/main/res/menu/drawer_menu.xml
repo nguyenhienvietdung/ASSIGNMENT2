@@ -9,42 +9,35 @@
 
         <item
             android:id="@+id/khoanthu"
-            android:title="Khoản thu"
             android:icon="@drawable/ic_attach_money_black_24dp"
-            />
+            android:title="@string/txt_khoan_thu" />
         <item
             android:id="@+id/khoanchi"
-            android:title="Khoản chi"
             android:icon="@drawable/ic_monetization_on_black_24dp"
-            />
+            android:title="@string/txt_khoan_chi" />
         <item
             android:id="@+id/thongke"
-            android:title="Thống kê"
             android:icon="@drawable/ic_thong_ke_24dp"
-            />
+            android:title="@string/txt_thong_ke" />
         />
 
     </group>
 
-    <item android:title="Hỗ trợ"
-       >
+    <item android:title="@string/txt_ho_tro">
 
         <menu>
             <item
                 android:id="@+id/gioithieu"
-                android:title="Giới thiệu"
                 android:icon="@drawable/ic_gioithieu"
-                />
+                android:title="@string/txt_gioi_thieu" />
             <item
                 android:id="@+id/doimatkhau"
-                android:title="Đổi mật khẩu"
                 android:icon="@drawable/ic_key"
-                />
+                android:title="@string/txt_doi_mat_khau" />
             <item
                 android:id="@+id/logout"
-                android:title="Logout"
                 android:icon="@drawable/ic_logout"
-                />
+                android:title="@string/txt_logout" />
         </menu>
 
     </item>

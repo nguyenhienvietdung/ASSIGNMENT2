@@ -1,59 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginLeft="35dp"
-    android:layout_marginRight="35dp"
+    android:layout_marginLeft="@dimen/d_35"
+    android:layout_marginRight="@dimen/d_35"
     android:background="@drawable/background_dialog">
-<ProgressBar
-    android:id="@+id/progress_loadconfirm"
-    android:layout_centerHorizontal="true"
-    android:layout_marginTop="20dp"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"/>
+
+    <ProgressBar
+        android:id="@+id/progress_loadconfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/d_20" />
+
     <TextView
         android:id="@+id/txt_Titleconfirm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="10dp"
-        android:text="Are You Sure Want to Save  ??"
-        android:textColor="@color/grey_dam"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:textSize="18dp" />
+        android:layout_marginStart="@dimen/d_15"
+        android:layout_marginLeft="@dimen/d_15"
+        android:layout_marginTop="@dimen/d_30"
+        android:layout_marginEnd="@dimen/d_10"
+        android:layout_marginRight="@dimen/d_10"
+        android:text="@string/txt_are_you_sure_want_to_save"
+        android:textColor="@color/grey_dam"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <LinearLayout
-        android:layout_below="@+id/txt_Titleconfirm"
-        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:layout_marginBottom="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_Titleconfirm"
+        android:layout_marginLeft="@dimen/d_10"
+        android:layout_marginTop="@dimen/d_20"
+        android:layout_marginRight="@dimen/d_10"
+        android:layout_marginBottom="@dimen/d_10"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/btn_yes"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:text="Yes"
+            android:layout_width="@dimen/d_0"
+            android:layout_height="wrap_content"
             android:layout_margin="10dp"
+            android:layout_weight="1"
             android:background="@drawable/button_bg"
-            android:textColor="@android:color/white"
-            android:layout_height="wrap_content" />
+            android:text="@string/txt_yes"
+            android:textColor="@android:color/white" />
 
         <Button
             android:id="@+id/btn_no"
-            android:layout_width="0dp"
-            android:text="No"
-            android:background="@drawable/bg_ui"
-            android:textColor="#FFFFFF"
-            android:layout_margin="10dp"
+            android:layout_width="@dimen/d_0"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/d_10"
             android:layout_weight="1"
-            android:layout_height="wrap_content" />
+            android:background="@drawable/bg_ui"
+            android:text="@string/txt_no"
+            android:textColor="#FFFFFF" />
 
     </LinearLayout>
 

@@ -1,37 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="@dimen/d_3"
+    android:layout_marginTop="@dimen/d_3"
+    android:layout_marginRight="@dimen/d_3"
+    android:layout_marginBottom="@dimen/d_3"
     android:gravity="center"
-    app:cardCornerRadius="5dp"
-    android:layout_marginTop="3dp"
-    android:layout_marginBottom="3dp"
-    android:layout_marginLeft="3dp"
-    android:layout_marginRight="3dp"
-    >
+    app:cardCornerRadius="@dimen/d_5">
 
     <RelativeLayout
         android:id="@+id/relative_item"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="15dp">
+        android:padding="@dimen/d_15"
+        tools:ignore="UselessParent">
+
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/img_avataitem"
-            android:layout_centerHorizontal="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
             android:src="@drawable/ic_cash" />
+
         <TextView
             android:id="@+id/textList"
-            android:layout_below="@id/img_avataitem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tên loại"
+            android:layout_below="@id/img_avataitem"
             android:layout_centerInParent="true"
+            android:text="Tên loại"
             android:textColor="@color/grey_dam"
-            android:textSize="16sp"
-           />
+            android:textSize="16sp" />
     </RelativeLayout>
 
 </LinearLayout>

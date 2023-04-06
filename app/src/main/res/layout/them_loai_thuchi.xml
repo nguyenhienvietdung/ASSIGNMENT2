@@ -2,70 +2,74 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginLeft="20dp"
-    android:layout_marginRight="20dp"
-    android:padding="5dp"
+    android:layout_marginLeft="@dimen/d_20"
+    android:layout_marginRight="@dimen/d_20"
     android:background="@drawable/background_dialog"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="@dimen/d_5">
 
     <TextView
-        android:padding="10dp"
-        android:textStyle="bold"
-        android:textSize="25dp"
-        android:textColor="@color/grey_dam"
-        android:gravity="center_horizontal"
         android:id="@+id/titleThemLoai"
-        android:text="THÊM LOẠI THU"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/d_10"
+        android:text="@string/txt_them_loai_thu"
+        android:textColor="@color/grey_dam"
+        android:textSize="@dimen/d_25"
+        android:textStyle="bold" />
+
     <LinearLayout
-        android:padding="30dp"
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/d_30">
+
         <EditText
 
             android:id="@+id/them_loai_thu"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:background="@drawable/background_edttext"
-            android:padding="12dp"
-            android:drawableTint="@color/grey_dam"
-            android:textColorHint="@color/grey_dam"
-            android:drawableRight="@drawable/ic_money"
-            android:layout_marginBottom="12dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nhập loại chi"
-            android:textSize="16dp"/>
+            android:layout_marginLeft="@dimen/d_10"
+            android:layout_marginRight="@dimen/d_10"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/background_edttext"
+            android:drawableRight="@drawable/ic_money"
+            android:drawableTint="@color/grey_dam"
+            android:hint="@string/hint_nhap_loai_chi"
+            android:padding="@dimen/d_12"
+            android:textColorHint="@color/grey_dam"
+            android:textSize="16sp" />
+
         <LinearLayout
-            android:layout_marginTop="30dp"
-            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_30"
+            android:orientation="horizontal">
 
             <Button
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_weight="1"
                 android:id="@+id/xoaTextLT"
-                android:text="Hủy"
-                android:textColor="#FFFFFF"
-                android:background="@drawable/bg_ui"
-                android:layout_gravity="center"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <Button
-                android:background="@drawable/bg_ui"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/d_10"
+                android:layout_marginRight="@dimen/d_10"
                 android:layout_weight="1"
+                android:background="@drawable/bg_ui"
+                android:text="@string/txt_huy"
+                android:textColor="#FFFFFF" />
+
+            <Button
                 android:id="@+id/btnThemLT"
-                android:text="Thêm"
-                android:textColor="#FFFFFF"
-                android:layout_gravity="center"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/d_10"
+                android:layout_marginRight="@dimen/d_10"
+                android:layout_weight="1"
+                android:background="@drawable/bg_ui"
+                android:text="@string/txt_them"
+                android:textColor="#FFFFFF" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

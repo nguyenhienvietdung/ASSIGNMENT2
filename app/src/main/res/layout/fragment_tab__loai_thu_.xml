@@ -11,13 +11,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     <RelativeLayout
-        android:padding="3dp"
+        android:padding="@dimen/d_3"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rcv_LoaiThu"
-            android:layout_marginBottom="80dp"
+            android:layout_marginBottom="@dimen/d_80"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 
@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginLeft="11dp"
+            android:layout_marginLeft="@dimen/d_11"
             fab:menu_animationDelayPerItem="55"
             fab:menu_backgroundColor="@android:color/transparent"
             fab:menu_buttonSpacing="0dp"
@@ -38,12 +38,12 @@
             fab:menu_fab_size="normal"
             fab:menu_icon="@drawable/fab_add"
             fab:menu_labels_colorNormal="#333"
-            fab:menu_labels_cornerRadius="3dp"
+            fab:menu_labels_cornerRadius="@dimen/d_3"
             fab:menu_labels_ellipsize="none"
             fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
             fab:menu_labels_margin="0dp"
             fab:menu_labels_maxLines="-1"
-            fab:menu_labels_padding="8dp"
+            fab:menu_labels_padding="@dimen/d_8"
             fab:menu_labels_position="left"
             fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
             fab:menu_labels_showShadow="true"
@@ -51,7 +51,8 @@
             fab:menu_labels_textSize="14sp"
             fab:menu_openDirection="up"
 
-            >
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="11dp">
             <com.github.clans.fab.FloatingActionButton
                 android:id="@+id/danhsachBtn"
                 android:layout_width="wrap_content"

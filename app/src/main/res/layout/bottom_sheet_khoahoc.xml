@@ -3,33 +3,36 @@
     android:id="@+id/bottomSheetContainer"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginLeft="10dp"
-    android:layout_marginRight="10dp"
+    android:layout_marginLeft="@dimen/d_10"
+    android:layout_marginRight="@dimen/d_10"
     android:background="@drawable/background_dialog"
     android:gravity="center_horizontal"
     android:orientation="vertical">
 
     <LinearLayout
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
         <View
-            android:layout_width="60dp"
-            android:layout_height="1dp"
+            android:layout_width="@dimen/d_60"
+            android:layout_height="@dimen/d_1"
             android:background="@color/grey" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="@dimen/d_10"
+            android:layout_marginTop="@dimen/d_10"
+            android:layout_marginRight="@dimen/d_10"
+            android:layout_marginBottom="@dimen/d_10"
             android:gravity="center_horizontal"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:text="Action"
+            android:text="@string/txt_action"
             android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold" />
+
         <View
             android:layout_width="60dp"
             android:layout_height="1dp"
@@ -38,8 +41,8 @@
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginBottom="10dp"
+        android:layout_height="@dimen/d_1"
+        android:layout_marginBottom="@dimen/d_10"
         android:background="@color/grey_nhat" />
 
     <TextView
@@ -48,14 +51,14 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:padding="8dp"
-        android:text="Xem chi tiết"
+        android:text="@string/txt_xem_chi_tiet"
         android:textColor="@color/grey_dam"
-        android:textSize="16dp" />
+        android:textSize="16sp" />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1.5dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="@dimen/d_10"
         android:background="@color/grey_nhat" />
 
     <TextView
@@ -64,9 +67,9 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:padding="8dp"
-        android:text="Sửa quản lí thu chi"
+        android:text="@string/txt_sua_quan_ly_thu_chi"
         android:textColor="@color/grey_dam"
-        android:textSize="16dp" />
+        android:textSize="16sp" />
 
     <View
         android:layout_width="match_parent"
@@ -80,9 +83,9 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:padding="8dp"
-        android:text="Xóa"
+        android:text="@string/txt_xoa"
         android:textColor="@color/red"
-        android:textSize="16dp" />
+        android:textSize="16sp" />
 
     <View
         android:layout_width="match_parent"
@@ -101,9 +104,7 @@
         android:background="@drawable/bg_ui"
         android:gravity="center_horizontal"
         android:padding="12dp"
-        android:text="Hủy"
+        android:text="@string/txt_huy"
         android:textColor="@color/white"
-        android:textSize="18dp" />
-
-
+        android:textSize="18sp" />
 </LinearLayout>

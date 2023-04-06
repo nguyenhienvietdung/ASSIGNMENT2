@@ -7,31 +7,31 @@
     tools:context=".RegisterActivity">
 
     <ImageView
-        android:id="@+id/logofpT"
-        android:layout_width="300dp"
-        android:layout_height="120dp"
-        android:layout_marginLeft="70dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="70dp"
-        android:layout_marginBottom="20dp"
+        android:id="@+id/logo"
+        android:layout_width="@dimen/d_300"
+        android:layout_height="@dimen/d_120"
+        android:layout_marginLeft="@dimen/d_70"
+        android:layout_marginTop="@dimen/d_30"
+        android:layout_marginRight="@dimen/d_70"
+        android:layout_marginBottom="@dimen/d_20"
         android:background="@drawable/logodung" />
 
     <ImageView
         android:id="@+id/circle1"
-        android:layout_width="134dp"
-        android:layout_height="134dp"
+        android:layout_width="@dimen/d_134"
+        android:layout_height="@dimen/d_134"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="@dimen/d_80"
+        android:layout_marginEnd="-70dp"
         android:layout_marginRight="-70dp"
         android:src="@drawable/circletransparant"
-        tools:ignore="ContentDescription"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="-70dp" />
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/circle3"
-        android:layout_width="182dp"
-        android:layout_height="182dp"
+        android:layout_width="@dimen/d_182"
+        android:layout_height="@dimen/d_182"
         android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
         android:layout_marginLeft="-80dp"
@@ -43,7 +43,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:padding="15dp">
+        android:padding="@dimen/d_15">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -58,7 +58,7 @@
                 android:layout_marginBottom="20dp"
                 android:text="ĐĂNG KÝ"
                 android:textColor="@color/black"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
 
@@ -73,52 +73,52 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/background_edttext"
                     android:hint="Nhập tên tài khoản"
-                    android:padding="14dp"
+                    android:padding="@dimen/d_14"
                     android:textColorHint="@color/grey_dam" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:passwordToggleEnabled="true"
+                android:layout_marginTop="@dimen/d_15"
                 app:hintEnabled="false"
-                android:layout_marginTop="15dp"
+                app:passwordToggleEnabled="true"
                 app:passwordToggleTint="@color/grey_dam">
 
                 <EditText
                     android:id="@+id/edtRegPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Nhập mật khẩu"
-                    android:textColorHint="@color/grey_dam"
-                    android:padding="14dp"
                     android:background="@drawable/background_edttext"
-                    android:inputType="textPassword" />
+                    android:hint="Nhập mật khẩu"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/d_14"
+                    android:textColorHint="@color/grey_dam" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:passwordToggleEnabled="true"
+                android:layout_marginTop="@dimen/d_15"
                 app:hintEnabled="false"
-                android:layout_marginTop="15dp"
+                app:passwordToggleEnabled="true"
                 app:passwordToggleTint="@color/grey_dam">
 
                 <EditText
                     android:id="@+id/edtRePassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Nhập mật khẩu xác nhận"
-                    android:padding="14dp"
-                    android:textColorHint="@color/grey_dam"
                     android:background="@drawable/background_edttext"
-                    android:inputType="textPassword" />
+                    android:hint="Nhập mật khẩu xác nhận"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/d_14"
+                    android:textColorHint="@color/grey_dam" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="@dimen/d_20"
                 android:orientation="horizontal"
                 android:weightSum="2">
 
@@ -126,7 +126,7 @@
                     android:id="@+id/btnReg"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginRight="@dimen/d_10"
                     android:layout_weight="1"
                     android:background="@drawable/bg_ui"
                     android:text="Đăng ký"

@@ -1,31 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardCornerRadius="5dp"
-    android:layout_marginTop="3dp"
-    android:layout_marginBottom="3dp"
-    android:layout_marginLeft="3dp"
-    android:layout_marginRight="3dp">
+    android:layout_marginLeft="@dimen/d_3"
+    android:layout_marginTop="@dimen/d_3"
+    android:layout_marginRight="@dimen/d_3"
+    android:layout_marginBottom="@dimen/d_3"
+    app:cardCornerRadius="@dimen/d_5">
 
     <RelativeLayout
         android:id="@+id/relative_item"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
-        android:padding="5dp">
+        android:padding="@dimen/d_5">
+
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/img_avataitem"
-            android:layout_width="55dp"
-            android:layout_height="55dp"
+            android:layout_width="@dimen/d_55"
+            android:layout_height="@dimen/d_55"
             android:src="@drawable/ic_cash" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="@dimen/d_20"
             android:layout_toRightOf="@id/img_avataitem"
             android:orientation="vertical">
 
@@ -35,8 +36,7 @@
                 android:layout_height="wrap_content"
                 android:text="Tên loại"
                 android:textColor="@color/grey_dam"
-                android:textSize="16sp"
-              />
+                android:textSize="16sp" />
 
         </LinearLayout>
 
